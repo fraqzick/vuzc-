@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\vuzc-\vuz\bin\Debug\net8.0\vuz.exe
+C:\Users\User\Desktop\vuzc-\vuz\bin\Debug\net8.0\vuz.deps.json
+C:\Users\User\Desktop\vuzc-\vuz\bin\Debug\net8.0\vuz.runtimeconfig.json
+C:\Users\User\Desktop\vuzc-\vuz\bin\Debug\net8.0\vuz.dll
+C:\Users\User\Desktop\vuzc-\vuz\bin\Debug\net8.0\vuz.pdb
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.AssemblyInfo.cs
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.dll
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\refint\vuz.dll
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.pdb
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\vuz.genruntimeconfig.cache
+C:\Users\User\Desktop\vuzc-\vuz\obj\Debug\net8.0\ref\vuz.dll
