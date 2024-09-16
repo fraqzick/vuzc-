@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj": {}
+    "c:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj": {
+    "c:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj",
+        "projectUniqueName": "c:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj",
         "projectName": "vuz",
-        "projectPath": "C:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj",
+        "projectPath": "c:\\Users\\User\\Desktop\\vuzc-\\vuz\\vuz.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\vuzc-\\vuz\\obj\\",
+        "outputPath": "c:\\Users\\User\\Desktop\\vuzc-\\vuz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
