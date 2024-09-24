@@ -8,24 +8,24 @@ namespace Laba_3
    {
       static void Main()
       {
-         // ex.1
-         WriteLine("Exercise_1");
-         WriteLine("Введите желаемую длину массива:");
-         int n = Convert.ToInt32(ReadLine());
-         int[] lt = new int[n];
-         WriteLine($"Введите {n} элементов массива:");
-         for (int i = 0; i < n; ++i) lt[i] = Convert.ToInt32(ReadLine());
+         // // ex.1
+         // WriteLine("Exercise_1");
+         // WriteLine("Введите желаемую длину массива:");
+         // int n = Convert.ToInt32(ReadLine());
+         // int[] lt = new int[n];
+         // WriteLine($"Введите {n} элементов массива:");
+         // for (int i = 0; i < n; ++i) lt[i] = Convert.ToInt32(ReadLine());
          
-         WriteLine("Введите число А:");
-         int A = Convert.ToInt32(ReadLine());      
-         WriteLine("Введите число B:");
-         int B = Convert.ToInt32(ReadLine());
-         if ((Array.IndexOf(lt, A) == -1) || (Array.IndexOf(lt, B) == -1))
-         {
-            WriteLine("A or B don't exists in array");
-            return;
-         }
-         else WriteLine(Abs(Array.IndexOf(lt, B) - Array.IndexOf(lt, A)) + 1);
+         // WriteLine("Введите число А:");
+         // int A = Convert.ToInt32(ReadLine());      
+         // WriteLine("Введите число B:");
+         // int B = Convert.ToInt32(ReadLine());
+         // if ((Array.IndexOf(lt, A) == -1) || (Array.IndexOf(lt, B) == -1))
+         // {
+         //    WriteLine("A or B don't exists in array");
+         //    return;
+         // }
+         // else WriteLine(Abs(Array.IndexOf(lt, B) - Array.IndexOf(lt, A)) + 1);
       
 
          // ex.2
@@ -66,17 +66,25 @@ namespace Laba_3
          if (len_matr >= 3)
          {
             WriteLine("\nМатрица после перестановки столбцов:");
+            int[] column1 = new int[len_matr], column3 = new int[len_matr];
+            for (int i = 0; i < len_matr; ++i)
+            {
+               column1[i] = matrizza[i, 0];
+               column3[i] = matrizza[i, 2];
+            }
             for (int i = 0; i < len_matr; ++i)
             {for (int j = 0; j < len_matr; ++j)
                {
                   if (j == 0)
-                  { 
-                     Write(matrizza[i, j + 2]);
+                  {
+                     matrizza[i, j] = column3[i];
+                     Write(matrizza[i, j]);
                      Write("\t");
                   }
                   if (j == 2)
                   {
-                     Write(matrizza[i, j - 2]);
+                     matrizza[i, j] = column1[i];
+                     Write(matrizza[i, j]);
                      Write("\t");
                   }
                   if ((j != 0) && (j != 2))
@@ -89,23 +97,23 @@ namespace Laba_3
             }
          }
          else WriteLine("Недостаточно столбцов для перестановки");
-         //ex.3
-         WriteLine("Execise_3");
-         int[][] steparr = [new int[5], new int[3], new int[8], new int[4], new int[6]];
-         Random rnd = new();
-         WriteLine("Стпенчатый массив:");
-         int sm = 0;
-         for (int i = 0; i < 5; ++i)
-         {
-            sm = 0;
-            for (int j = 0; j < steparr[i].Length; ++j)
-            {
-               steparr[i][j] = rnd.Next(-500, 501);
-               Write("{0, 5}  ", steparr[i][j]);
-               sm += steparr[i][j];
-            }
-            Write("\t Сумма элементов строки равна {0}\n", sm);
-         }
+         // //ex.3
+         // WriteLine("Execise_3");
+         // int[][] steparr = [new int[5], new int[3], new int[8], new int[4], new int[6]];
+         // Random rnd = new();
+         // WriteLine("Стпенчатый массив:");
+         // int sm = 0;
+         // for (int i = 0; i < 5; ++i)
+         // {
+         //    sm = 0;
+         //    for (int j = 0; j < steparr[i].Length; ++j)
+         //    {
+         //       steparr[i][j] = rnd.Next(-500, 501);
+         //       Write("{0, 5}  ", steparr[i][j]);
+         //       sm += steparr[i][j];
+         //    }
+         //    Write("\t Сумма элементов строки равна {0}\n", sm);
+         // }
          
       }
    }
