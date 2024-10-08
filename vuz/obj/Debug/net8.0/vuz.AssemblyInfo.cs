@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vuz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc0165d27ccb5ccd9ab762c54de3a9f6f98cfade")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab35bbc5217c500009db0d0d42e3e347c6aace85")]
 [assembly: System.Reflection.AssemblyProductAttribute("vuz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vuz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

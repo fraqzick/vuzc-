@@ -1,0 +1,45 @@
+using static System.Console;
+
+
+namespace Laba_5
+{
+    class Class1
+    {
+        static void Main()
+        {
+            //ex.1
+            WriteLine("Введите строку:");
+            string s = ReadLine();
+            List<string> words = s.Split().ToList();
+            words.Reverse();
+            char[] chars = s.ToCharArray();
+            Array.Reverse(chars);
+            s = new string(chars);
+            foreach (string word in words) Write($"{word} ");
+            Write($"\n{s}\n");
+
+            //ex.2
+            WriteLine("Введите строку:");
+            string str = ReadLine();
+            string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int k = str.Split(new char[] { ' ', ',' }).Select(x => x.Length).Max();
+            string newstr = "";
+            foreach (char c in str)
+            {
+                int CharPos = Alphabet.IndexOf(c.ToString().ToUpper()[0]); 
+                if (CharPos >= 0) 
+                { 
+                    char EncryptedChar = Alphabet[(CharPos + k) % Alphabet.Length]; 
+                    if (c.ToString().ToUpper() != c.ToString()) 
+                        EncryptedChar = EncryptedChar.ToString().ToLower()[0]; 
+                    newstr += EncryptedChar; 
+                } 
+                else 
+                    newstr += c;
+            }
+            str = newstr;
+            WriteLine(str);
+            WriteLine(k);
+        }
+    }
+}
