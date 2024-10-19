@@ -1,4 +1,4 @@
-﻿using static System.Console;
+using static System.Console;
 
 
 namespace Laba_6
@@ -11,7 +11,6 @@ namespace Laba_6
             FileInfo file = new(@"C:\Users\User\Desktop\vuzc-\vuz\ex1_lab6.txt");
             StreamReader reader = file.OpenText();
             string text = reader.ReadLine();
-            reader.Close();
             string newtext = "";
             foreach (char c in text)
             {
@@ -32,15 +31,15 @@ namespace Laba_6
             }
             WriteLine("Ex.1\n" + newtext + "\n");
 
-            // ex.2
+            //ex.2
             FileInfo file2 = new(@"C:\Users\User\Desktop\vuzc-\vuz\ex2_lab6.txt");
             StreamReader reader2 = file2.OpenText();
             string text2 = "", t = "";
             while ((t = reader2.ReadLine()) != null)
             {
                 text2 += $"{t}\n";
+                
             }
-            reader2.Close();
             List<string> lt = text2.Split("\n").ToList();
             List<string> spisokzhanrov = [];
             foreach (string s in lt)
@@ -50,14 +49,12 @@ namespace Laba_6
                 spisokzhanrov.Add(c);
             }
             HashSet<string> st = spisokzhanrov.ToHashSet();
-            st.Remove("");
             FileInfo file3 = new(@"C:\Users\User\Desktop\vuzc-\vuz\ex2_lab6_vivod.txt");
             StreamWriter writer = file3.AppendText();
             foreach (string c in st)
             {
-                writer.WriteLine($"{c} - {(from x in spisokzhanrov where x == c select x).Count()}");
+                writer.WriteLine($"{c} = {spisokzhanrov.Count(x => x == c)}");
             }
-            writer.Close();
         }
     }
 }
