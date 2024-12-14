@@ -1,3 +1,4 @@
+
 using static System.Console;
 
 namespace Lab_7
@@ -5,9 +6,27 @@ namespace Lab_7
     class Ship
     {
         //Создаём поля класса
-        private string Name{get; set;} = "Noname";
-        private int Displacement{get; set;} = 6000;
-        private string Type{get; set;} = "Cruiser";
+        private string name;
+        private int displacement;
+        private string type;
+
+
+        //Создаём свойства полей
+        public string Name
+        {
+            get{return name;} 
+            set{if (value != "") name = value;}
+        }
+        public int Displacement
+        {
+            get{return displacement;} 
+            set{if (value > 0) displacement = value;}
+        }
+        public string Type
+        {
+            get{return type;} 
+            set{if (value != "") type = value;}
+        }
 
 
         //Создаём конструкторы
@@ -68,7 +87,16 @@ namespace Lab_7
         {
             //Создём экземпляры класса
             Ship ship1 = new();
-            Ship ship2 = new("Avrora", 7130, "Cruiser");
+            WriteLine("Был создан корабль с такими данными: ");
+            ship1.WhatchData();
+
+            WriteLine("Введите имя вашего корабля:");
+            string n = ReadLine();
+            WriteLine("Введите водоизмещение вашего корабля:");
+            int d = Convert.ToInt32(ReadLine());
+            WriteLine("Введите тип вашего корабля:");
+            string t = ReadLine();
+            Ship ship2 = new(n, d, t);
             //Тестим методы класса
             ship1.WhatchData();
             ship2.WhatchData();
@@ -83,21 +111,3 @@ namespace Lab_7
         }
     }
 }
-//Вывод:
-// Наименование - Pobeda
-// Водоизмещение - 1500
-// Тип - Yacht
-// Наименование - Avrora
-// Водоизмещение - 7130
-// Тип - Cruiser
-// Наименование - beda
-// Водоизмещение - 8630
-// Тип - Yacht
-// Наименование - beda
-// Водоизмещение - 1500
-// Тип - Yacht
-
-//Запись в файл:
-// Наименование - beda
-// Водоизмещение - 1500
-// Тип - Yacht
